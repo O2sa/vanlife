@@ -9,6 +9,10 @@ export default function HostVans() {
             .then(res => res.json())
             .then(data => setVans(data.vans))
     }, [])
+    
+    /**
+     * Here's the other absolute path Link that needs changing 👇
+     */
 
     const hostVansEls = vans.map(van => (
         <Link
